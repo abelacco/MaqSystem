@@ -1,0 +1,70 @@
+<div class="layout-box">
+    <div class="p-10">
+        <a routerLink="/servicios" class="flex items-center gap-2 hover:underline"><i class="pi pi-arrow-left"></i> Volver</a>
+        <div class="mt-5">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4 w-full justify-between">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Maquina / Equipo</label>
+                        <input type="text" pInputText>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Fabricante</label>
+                        <input type="text" pInputText>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Modelo</label>
+                        <input type="text" pInputText>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full justify-between">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Fecha</label>
+                        <input type="text" pInputText>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Lugar</label>
+                        <input type="text" pInputText>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Mecanico</label>
+                        <input type="text" pInputText>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                    <label for="">Tipo de mantenimiento</label>
+                    <p-selectButton class="w-full shared-selectbutton" [options]="paymentOptions" [(ngModel)]="valToggle" optionLabel="name"></p-selectButton>
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                    <label for="">Intervalo de mantenimiento</label>
+                    <p-selectButton class="w-full shared-selectbutton" [options]="intervalMaintenance" [(ngModel)]="valToggle" optionLabel="name"></p-selectButton>
+                </div>
+                <div class="flex items-center gap-4 w-full justify-between">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Servicio</label>
+                        <div class="flex justify-between items-center gap-2">
+                            <input type="text" pInputText class="w-full">
+                            <button pButton icon="pi pi-plus"></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Repuestos utilizados</label>
+                        <div class="flex justify-between items-center gap-2">
+                            <input type="text" pInputText class="w-full">
+                            <button pButton icon="pi pi-plus"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 w-full justify-between">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Observaciones</label>
+                        <textarea type="text" pInputTextarea></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end mt-5">
+                <button pButton class="p-button-success font-semibold">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>

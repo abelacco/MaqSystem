@@ -1,29 +1,28 @@
 <div class="layout-topbar">
-    <a class="layout-topbar-logo" routerLink="">
-        <img src="assets/layout/images/{{layoutService.config.colorScheme === 'light' ? 'logo-dark' : 'logo-white'}}.svg" alt="logo">
-        <span>SAKAI</span>
-    </a>
-
-    <button #menubutton class="p-link layout-menu-button layout-topbar-button" (click)="layoutService.onMenuToggle()">
-        <i class="pi pi-bars"></i>
-    </button>
+    <div class="flex justify-between items-center">
+        <button #menubutton class="p-link layout-menu-button layout-topbar-button" (click)="layoutService.onMenuToggle()">
+            <i class="pi pi-bars"></i>
+        </button>
+        <a class="layout-topbar-logo flex" routerLink="">
+            <img class="grayscale-0" src="assets/layout/images/{{layoutService.config.colorScheme === 'light' ? 'logo-dark' : 'logo-white'}}.svg" alt="logo">
+            <span>PSC</span>
+        </a>
+    </div>
 
     <button #topbarmenubutton class="p-link layout-topbar-menu-button layout-topbar-button" (click)="layoutService.showProfileSidebar()">
         <i class="pi pi-ellipsis-v"></i>
     </button>
 
-    <div #topbarmenu class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active': layoutService.state.profileSidebarVisible}">
-        <button class="p-link layout-topbar-button">
-            <i class="pi pi-calendar"></i>
-            <span>Calendar</span>
-        </button>
-        <button class="p-link layout-topbar-button">
-            <i class="pi pi-user"></i>
-            <span>Profile</span>
-        </button>
-        <button class="p-link layout-topbar-button" [routerLink]="'/documentation'">
-            <i class="pi pi-cog"></i>
-            <span>Settings</span>
+    <div #topbarmenu class="layout-topbar-menu flex justify-center" [ngClass]="{'layout-topbar-menu-mobile-active': layoutService.state.profileSidebarVisible}">
+
+        <button class="p-link layout-topbar-button w-44 justify-end gap-5 ml-0 rounded-md">
+            <div class="flex items-center">
+                <i class="pi pi-user"></i>
+            </div>
+            <div class="px-4 text-black border-l-2 rounded-none border-[#e6e6e6]">
+                <p class="font-bold text-sm text-[#646464]">username</p>
+                <p class="font-medium text-sm text-[#646464]">admin</p>
+            </div>
         </button>
     </div>
 </div>

@@ -3,6 +3,7 @@ import { LayoutService } from 'src/app/layout/service/app.layout.service';
 
 @Component({
     selector: 'app-login',
+    styleUrls: ['./login.component.scss'],
     templateUrl: './login.component.html',
     styles: [`
         :host ::ng-deep .pi-eye,
