@@ -165,8 +165,10 @@ const MENUITEMS = [
     {
         label: 'Gestion',
         items: [
-            { label: 'Unidades', icon: 'pi pi-fw pi-home', routerLink: ['/unidades'] },
-            { label: 'Servicios', icon: 'pi pi-fw pi-home', routerLink: ['/servicios'] }
+            { label: 'Unidades', icon: 'pi pi-fw pi-truck', routerLink: ['/unidades'] },
+            { label: 'Servicios', icon: 'pi pi-fw pi-chart-line', routerLink: ['/servicios'] },
+            { label: 'Usuarios', icon: 'pi pi-fw pi-users', routerLink: ['/usuarios'] },
+            { label: 'Fichas de inspeccion', icon: 'pi pi-fw pi-book', routerLink: ['/fichas'] }
         ]
     }
 ]

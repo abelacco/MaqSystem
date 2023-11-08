@@ -1,0 +1,292 @@
+<div class="layout-box">
+    <div class="p-10">
+        <div class="flex justify-between items-center">
+            <a routerLink="/fichas" class="flex items-center gap-2 hover:underline"><i class="pi pi-arrow-left"></i> Volver</a>
+            <button pButton class="p-button-success font-semibold">Aceptar</button>
+        </div>
+        <div class="mt-5">
+            <div class="mt-5">
+                <p-tabView orientation="left">
+                    <p-tabPanel header="VOLQUETE" class="line-height-3 m-0">
+                        <div class="flex flex-col h-full gap-4">
+                            <div class="flex items-center gap-4 w-full justify-between">
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Modelo</label>
+                                    <input type="text" pInputText>
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Marca</label>
+                                    <input type="text" pInputText>
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Placa</label>
+                                    <input type="text" pInputText>
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Fecha</label>
+                                    <input type="text" pInputText>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 w-full justify-between">
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Serie</label>
+                                    <input type="text" pInputText>
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Año</label>
+                                    <input type="text" pInputText>
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Horometro</label>
+                                    <input type="text" pInputText>
+                                </div>
+                                <div class="flex flex-col gap-2 w-full">
+                                    <label for="">Kilometraje</label>
+                                    <input type="text" pInputText>
+                                </div>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="PARTE DELANTERA" class="line-height-3 m-0">
+                        <div class="shadow-md border border-[#e6e6e6] overflow-y-auto w-full">
+                            <p-table #dt [value]="equipmentArray" [rows]="10" [totalRecords]="equipmentArray.length"[loading]="false" class="shared-table"
+                            [lazy]="true"
+                                responsiveLayout="scroll" [paginator]="false" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+                                <ng-template pTemplate="header">
+                                    <tr >
+                                        <th colspan="20"></th>
+                                    </tr>
+                                    <tr>
+
+                                        <th colspan="3">PARTE DELANTERA</th>
+                                        <th>SI</th>
+                                        <th>NO</th>
+                                        <th>B</th>
+                                        <th>CANT</th>
+                                        <th>M</th>
+                                        <th>CANT</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-truck>
+                                    <tr>
+                                        <td colspan="3">BRAZO LIMPIAPARABRIZAS C/ PLUMILLAS</td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="CABINA" class="line-height-3 m-0">
+                        <div class="shadow-md border border-[#e6e6e6] overflow-y-auto w-full">
+                            <p-table #dt [value]="equipmentArray" [rows]="10" [totalRecords]="equipmentArray.length"[loading]="false" class="shared-table"
+                            [lazy]="true"
+                                responsiveLayout="scroll" [paginator]="false" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+                                <ng-template pTemplate="header">
+                                    <tr >
+                                        <th colspan="20"></th>
+                                    </tr>
+                                    <tr>
+
+                                        <th colspan="3">CABINA</th>
+                                        <th>SI</th>
+                                        <th>NO</th>
+                                        <th>B</th>
+                                        <th>CANT</th>
+                                        <th>M</th>
+                                        <th>CANT</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-truck>
+                                    <tr>
+                                        <td colspan="3">BRAZO LIMPIAPARABRIZAS C/ PLUMILLAS</td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="LADO DERECHO DE MAQUINA" class="line-height-3 m-0">
+                        <div class="shadow-md border border-[#e6e6e6] overflow-y-auto w-full">
+                            <p-table #dt [value]="equipmentArray" [rows]="10" [totalRecords]="equipmentArray.length"[loading]="false" class="shared-table"
+                            [lazy]="true"
+                                responsiveLayout="scroll" [paginator]="false" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+                                <ng-template pTemplate="header">
+                                    <tr >
+                                        <th colspan="20"></th>
+                                    </tr>
+                                    <tr>
+
+                                        <th colspan="3">LADO DERECHO DE MAQUINA</th>
+                                        <th>SI</th>
+                                        <th>NO</th>
+                                        <th>B</th>
+                                        <th>CANT</th>
+                                        <th>M</th>
+                                        <th>CANT</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-truck>
+                                    <tr>
+                                        <td colspan="3">BRAZO LIMPIAPARABRIZAS C/ PLUMILLAS</td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="LADO IZQUIERDO DE MAQUINA" class="line-height-3 m-0">
+                        <div class="shadow-md border border-[#e6e6e6] overflow-y-auto w-full">
+                            <p-table #dt [value]="equipmentArray" [rows]="10" [totalRecords]="equipmentArray.length"[loading]="false" class="shared-table"
+                            [lazy]="true"
+                                responsiveLayout="scroll" [paginator]="false" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+                                <ng-template pTemplate="header">
+                                    <tr >
+                                        <th colspan="20"></th>
+                                    </tr>
+                                    <tr>
+
+                                        <th colspan="3">LADO IZQUIERDO DE MAQUINA</th>
+                                        <th>SI</th>
+                                        <th>NO</th>
+                                        <th>B</th>
+                                        <th>CANT</th>
+                                        <th>M</th>
+                                        <th>CANT</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-truck>
+                                    <tr>
+                                        <td colspan="3">BRAZO LIMPIAPARABRIZAS C/ PLUMILLAS</td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="PARTE POSTERIOR" class="line-height-3 m-0">
+                        <div class="shadow-md border border-[#e6e6e6] overflow-y-auto w-full">
+                            <p-table #dt [value]="equipmentArray" [rows]="10" [totalRecords]="equipmentArray.length"[loading]="false" class="shared-table"
+                            [lazy]="true"
+                                responsiveLayout="scroll" [paginator]="false" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+                                <ng-template pTemplate="header">
+                                    <tr >
+                                        <th colspan="20"></th>
+                                    </tr>
+                                    <tr>
+
+                                        <th colspan="3">PARTE POSTERIOR</th>
+                                        <th>SI</th>
+                                        <th>NO</th>
+                                        <th>B</th>
+                                        <th>CANT</th>
+                                        <th>M</th>
+                                        <th>CANT</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-truck>
+                                    <tr>
+                                        <td colspan="3">BRAZO LIMPIAPARABRIZAS C/ PLUMILLAS</td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="HERRAMIENTAS Y ACCESORIOS" class="line-height-3 m-0">
+                        <div class="shadow-md border border-[#e6e6e6] overflow-y-auto w-full">
+                            <p-table #dt [value]="equipmentArray" [rows]="10" [totalRecords]="equipmentArray.length"[loading]="false" class="shared-table"
+                            [lazy]="true"
+                                responsiveLayout="scroll" [paginator]="false" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+                                <ng-template pTemplate="header">
+                                    <tr >
+                                        <th colspan="20"></th>
+                                    </tr>
+                                    <tr>
+
+                                        <th colspan="3">HERRAMIENTAS Y ACCESORIOS</th>
+                                        <th>SI</th>
+                                        <th>NO</th>
+                                        <th>B</th>
+                                        <th>CANT</th>
+                                        <th>M</th>
+                                        <th>CANT</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-truck>
+                                    <tr>
+                                        <td colspan="3">BRAZO LIMPIAPARABRIZAS C/ PLUMILLAS</td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="COMPONENTES ADICIONALES" class="line-height-3 m-0">
+                        <div class="shadow-md border border-[#e6e6e6] overflow-y-auto w-full">
+                            <p-table #dt [value]="equipmentArray" [rows]="10" [totalRecords]="equipmentArray.length"[loading]="false" class="shared-table"
+                            [lazy]="true"
+                                responsiveLayout="scroll" [paginator]="false" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+                                <ng-template pTemplate="header">
+                                    <tr >
+                                        <th colspan="20"></th>
+                                    </tr>
+                                    <tr>
+
+                                        <th colspan="3">COMPONENTES ADICIONALES</th>
+                                        <th>SI</th>
+                                        <th>NO</th>
+                                        <th>B</th>
+                                        <th>CANT</th>
+                                        <th>M</th>
+                                        <th>CANT</th>
+                                    </tr>
+                                </ng-template>
+                                <ng-template pTemplate="body" let-truck>
+                                    <tr>
+                                        <td colspan="3">BRAZO LIMPIAPARABRIZAS C/ PLUMILLAS</td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                        <td><p-tableCheckbox></p-tableCheckbox></td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </p-tabPanel>
+                </p-tabView>
+            </div>
+        </div>
+    </div>
+</div>

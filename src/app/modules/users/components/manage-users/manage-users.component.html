@@ -1,0 +1,46 @@
+<div class="layout-box">
+    <div class="p-10">
+        <a routerLink="/usuarios" class="flex items-center gap-2 hover:underline"><i class="pi pi-arrow-left"></i> Volver</a>
+        <div class="mt-5">
+            <div class="flex flex-col h-full gap-4">
+                <div class="flex items-center gap-4 w-full justify-between">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Nombre</label>
+                        <input type="text" pInputText>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Apellidos</label>
+                        <input type="text" pInputText>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full justify-between">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Telefono</label>
+                        <input type="text" pInputText>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Direccion</label>
+                        <input type="text" pInputText>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full justify-between">
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Contraseña</label>
+                        <p-password id="password1" placeholder="Password" [toggleMask]="true" class="w-full"></p-password>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="">Repetir contraseña</label>
+                        <p-password id="password1" placeholder="Password" [toggleMask]="true" class="w-full"></p-password>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                    <label for="">Tipo</label>
+                    <p-dropdown type="text" class="shared-dropdown w-full"></p-dropdown>
+                </div>
+            </div>
+            <div class="flex justify-end mt-5">
+                <button pButton class="p-button-success font-semibold">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>

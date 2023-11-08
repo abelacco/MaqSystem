@@ -12,6 +12,8 @@ import { AppLayoutComponent } from "./layout/app.layout.component";
                     { path: '', loadChildren: () => import('./demo/components/dashboard/dashboard.module').then(m => m.DashboardModule) },
                     { path: 'unidades', loadChildren: () => import('./modules/units/units.module').then(m => m.UnitsModule) },
                     { path: 'servicios', loadChildren: () => import('./modules/services/services.module').then(m => m.ServicesModule) },
+                    { path: 'usuarios', loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule) },
+                    { path: 'fichas', loadChildren: () => import('./modules/inspection-sheets/inspection-sheets.module').then(m => m.InspectionSheetsModule) },
 
 
                     { path: 'uikit', loadChildren: () => import('./demo/components/uikit/uikit.module').then(m => m.UIkitModule) },

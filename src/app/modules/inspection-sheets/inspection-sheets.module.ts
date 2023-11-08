@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListServicesComponent } from './components/list-services/list-services.component';
-import { ManageServicesComponent } from './components/manage-services/manage-services.component';
-import { ServicesRoutingModule } from './services-routing.module';
+import { ListInspectionsComponent } from './components/list-inspections/list-inspections.component';
+import { ManageInspectionsComponent } from './components/manage-inspections/manage-inspections.component';
+import { InspectionSheetsRoutingModule } from './inspectionsheets-routing.module';
 import { TableModule } from 'primeng/table';
 import { FileUploadModule } from 'primeng/fileupload';
 import { FormsModule } from '@angular/forms';
@@ -23,36 +23,38 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import { TooltipModule } from 'primeng/tooltip';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { SelectButtonModule } from 'primeng/selectbutton';
+import { TabViewModule } from 'primeng/tabview';
 
 
 @NgModule({
-  declarations: [
-    ListServicesComponent,
-    ManageServicesComponent
-  ],
-  imports: [
-    CommonModule,
-    ServicesRoutingModule,
-    TableModule,
-    FileUploadModule,
-    FormsModule,
-    ButtonModule,
-    RippleModule,
-    ToastModule,
-    ToolbarModule,
-    RatingModule,
-    InputTextModule,
-    InputTextareaModule,
-    DropdownModule,
-    RadioButtonModule,
-    InputNumberModule,
-    DialogModule,
-    CalendarModule,
-    MultiSelectModule,
-    AutoCompleteModule,
-    TooltipModule,
-    ToggleButtonModule,
-    SelectButtonModule
-  ]
+    declarations: [
+        ListInspectionsComponent,
+        ManageInspectionsComponent
+    ],
+    imports: [
+        CommonModule,
+        InspectionSheetsRoutingModule,
+        TableModule,
+        FileUploadModule,
+        FormsModule,
+        ButtonModule,
+        RippleModule,
+        ToastModule,
+        ToolbarModule,
+        RatingModule,
+        InputTextModule,
+        InputTextareaModule,
+        DropdownModule,
+        RadioButtonModule,
+        InputNumberModule,
+        DialogModule,
+        CalendarModule,
+        MultiSelectModule,
+        AutoCompleteModule,
+        TooltipModule,
+        ToggleButtonModule,
+        SelectButtonModule,
+        TabViewModule,
+    ]
 })
-export class ServicesModule { }
+export class InspectionSheetsModule { }

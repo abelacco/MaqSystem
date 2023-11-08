@@ -20,7 +20,7 @@ export class ListServicesComponent {
             type: "Camion"
         },
         {
-            name: "abelaca en 4",
+            name: "Mantenimiento",
             type: "Camion"
         }
     ]

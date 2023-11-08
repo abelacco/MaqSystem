@@ -278,7 +278,9 @@ $gutter: 1rem; //for primeflex grid system
 };
 
 p-password {
-
+    .p-component {
+        width: 100%;
+    }
 }
 
 .shared-dropdown {
@@ -288,7 +290,7 @@ p-password {
         }
     }
 
-    .p-multiselect {
+    .p-dropdown, .p-multiselect {
         width: 100% !important;
     }
 }
