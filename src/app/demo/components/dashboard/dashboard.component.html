@@ -348,9 +348,9 @@
                     <ng-template pTemplate="body" let-truck>
                         <tr>
                             <td>{{ truck.type }}</td>
-                            <td>{{ truck.brand }}</td>
-                            <td>{{ truck.model }}</td>
-                            <td>{{ truck.engineSerial }}</td>
+                            <td>{{ truck.plates }}</td>
+                            <td>{{ truck.service }}</td>
+                            <td>{{ truck.location }}</td>
                         </tr>
                     </ng-template>
                 </p-table>
@@ -366,21 +366,23 @@
                 <ng-template pTemplate="header">
                     <tr></tr>
                     <tr>
+                        <th>Fecha de mantenimiento</th>
+                        <th >Unidad</th>
+                        <th >Placas</th>
+                        <th >Tipo de mantenimiento</th>
+                        <th >Fecha de alta</th>
+                        <th >Status</th>
 
-                        <th >Nombre</th>
-                        <th >Marca</th>
-                        <th >Modelo</th>
-                        <th >Serie del Motor</th>
-                        <th >Chasis</th>
                     </tr>
                 </ng-template>
                 <ng-template pTemplate="body" let-truck>
                     <tr>
+                        <td>{{ truck.date }}</td>
                         <td>{{ truck.type }}</td>
-                        <td>{{ truck.brand }}</td>
-                        <td>{{ truck.model }}</td>
-                        <td>{{ truck.engineSerial }}</td>
-                        <td>{{ truck.chassisSerial }}</td>
+                        <td>{{ truck.plates }}</td>
+                        <td>{{ truck.maintenanceType }}</td>
+                        <td>{{ truck.maintenanceEndDate }}</td>
+                        <td>{{ truck.status }}</td>
                     </tr>
                 </ng-template>
             </p-table>
