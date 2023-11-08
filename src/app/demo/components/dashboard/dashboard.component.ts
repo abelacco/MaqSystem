@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         zoomControl: false,
         mapTypeControl: false,
         streetViewControl: false,
-        fullscreenControl: false,
+        fullscreenControl: true,
         zoom: 14,
     }
 

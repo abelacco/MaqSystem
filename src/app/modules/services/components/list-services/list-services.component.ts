@@ -12,16 +12,32 @@ export class ListServicesComponent {
 
     equipmentArray = [
         {
+            date: "11/08/2023",
+            placa: "B3-0340",
             name: "Cambio de llantas",
-            type: "Camion"
+            servicetype: 0,
+            type: "M. Preventivo"
         },
         {
-            name: "Lavado",
-            type: "Camion"
+            date: "11/08/2023",
+            placa: "B3-0340",
+            name: "Cambio de llantas",
+            servicetype: 1,
+            type: "M. Correctivo"
         },
         {
-            name: "Mantenimiento",
-            type: "Camion"
-        }
+            date: "11/08/2023",
+            placa: "B3-0340",
+            name: "Cambio de llantas",
+            servicetype: 2,
+            type: "En servicio"
+        },
+        {
+            date: "11/08/2023",
+            placa: "B3-0340",
+            name: "Cambio de llantas",
+            servicetype: 3,
+            type: "En el local"
+        },
     ]
 }

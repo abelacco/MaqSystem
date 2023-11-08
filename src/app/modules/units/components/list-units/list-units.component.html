@@ -86,7 +86,7 @@
                             <th >Chasis</th>
                             <th pSortableColumn="yearOfManufacture" pTooltip="cod Product" tooltipPosition="top">Año <p-sortIcon field="yearOfManufacture"></p-sortIcon></th>
                             <th pSortableColumn="supplier">Proveedor <p-sortIcon field="supplier"></p-sortIcon></th>
-                            <th pSortableColumn="notes" pTooltip="Comentarios" tooltipPosition="top">Comentarios  <p-sortIcon field="notes"></p-sortIcon> </th>
+                            <th pSortableColumn="status" pTooltip="status" tooltipPosition="top">Estatus  <p-sortIcon field="status"></p-sortIcon> </th>
                             <th></th>
                         </tr>
                     </ng-template>
@@ -99,7 +99,11 @@
                             <td>{{ truck.chassisSerial }}</td>
                             <td>{{ truck.yearOfManufacture }}</td>
                             <td>{{ truck.supplier }}</td>
-                            <td>{{ truck.notes }}</td>
+                            <td>
+                                <div class="flex justify-start">
+                                    <span class="w-[120px] flex justify-center items-center py-0.5 rounded-full" [ngClass]="{ 'bg-green-100': truck.notetype == 0, 'bg-red-100': truck.notetype == 1, 'bg-orange-100': truck.notetype == 2, 'bg-yellow-100': truck.notetype == 3 }">{{ truck.notes }}</span>
+                                </div>
+                            </td>
                             <td>
                                 <button pButton icon="pi pi-pencil" class="p-button-rounded p-button-success"></button>
                             </td>

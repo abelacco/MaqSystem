@@ -77,16 +77,23 @@
                             </th>
                         </tr>
                         <tr>
-
-                            <th >Nombre</th>
+                            <th>Fecha</th>
+                            <th>Nombre de camion</th>
+                            <th >Placa</th>
                             <th pSortableColumn="type" pTooltip="type" tooltipPosition="top">Tipo  <p-sortIcon field="type"></p-sortIcon> </th>
                             <th></th>
                         </tr>
                     </ng-template>
                     <ng-template pTemplate="body" let-truck>
                         <tr>
+                            <td>{{ truck.date }}</td>
                             <td>{{ truck.name }}</td>
-                            <td>{{ truck.type }}</td>
+                            <td>{{ truck.placa }}</td>
+                            <td>
+                                <div class="flex justify-start">
+                                    <span class="w-[120px] flex justify-center items-center py-0.5 rounded-full" [ngClass]="{ 'bg-green-100': truck.servicetype == 0, 'bg-red-100': truck.servicetype == 1, 'bg-orange-100': truck.servicetype == 2, 'bg-yellow-100': truck.servicetype == 3 }">{{ truck.type }}</span>
+                                </div>
+                            </td>
                             <td>
                                 <button pButton icon="pi pi-pencil" class="p-button-rounded p-button-success"></button>
                             </td>

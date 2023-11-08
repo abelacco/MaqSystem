@@ -20,7 +20,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2017,
             invoice: "F301-420",
             supplier: "FERREYROS SA",
-            notes: "VENDIDO"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "RETROEXCAVADORA",
@@ -31,7 +32,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2016,
             invoice: "F051-15280",
             supplier: "UNIMAQ",
-            notes: "LIBERADA"
+            notetype: 1,
+            notes: "M. Correctivo"
         },
         {
             type: "RETROEXCAVADORA",
@@ -42,7 +44,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2022,
             invoice: "FP18-316",
             supplier: "UNIMAQ",
-            notes: "AUN SE ESTA CANCELANDO A UNIMAQ"
+            notetype: 2,
+            notes: "En servicio"
         },
         {
             type: "CARGADOR FRONTAL SOBRE RUEDAS",
@@ -53,7 +56,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2016,
             invoice: "F301-277",
             supplier: "FERREYROS SA",
-            notes: "LIBERADA"
+            notetype: 3,
+            notes: "En el local"
         },
         {
             type: "RODILLO VIBRATORIO COMPACTADOR",
@@ -64,7 +68,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2013,
             invoice: "303-315",
             supplier: "FERREYROS SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "RODILLO COMPACTADOR",
@@ -75,7 +80,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2016,
             invoice: "F051-11088",
             supplier: "UNIMAQ SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MINICARGADOR 01",
@@ -86,7 +92,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2014,
             invoice: "014-8289",
             supplier: "UNIMAQ SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MINICARGADOR 02",
@@ -97,7 +104,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2016,
             invoice: "F009-2967",
             supplier: "IPESA SAC",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MINICARGADOR 03",
@@ -108,7 +116,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2019,
             invoice: "F051-28383",
             supplier: "UNIMAQ SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "TRACTOR DE ORUGAS",
@@ -119,7 +128,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2015,
             invoice: "F301-67",
             supplier: "FERREYROS SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MOTONIVELADORA",
@@ -130,7 +140,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2018,
             invoice: "F003-13099",
             supplier: "KOMATSU SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MOTONIVELADORA",
@@ -141,7 +152,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2018,
             invoice: "F003-13099",
             supplier: "KOMATSU SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MOTONIVELADORA",
@@ -152,7 +164,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2018,
             invoice: "F003-13099",
             supplier: "KOMATSU SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MOTONIVELADORA",
@@ -163,7 +176,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2018,
             invoice: "F003-13099",
             supplier: "KOMATSU SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         },
         {
             type: "MOTONIVELADORA",
@@ -174,7 +188,8 @@ export class ListUnitsComponent {
             yearOfManufacture: 2018,
             invoice: "F003-13099",
             supplier: "KOMATSU SA",
-            notes: "LIBERADA"
+            notetype: 0,
+            notes: "M. Preventivo"
         }
     ];
 
