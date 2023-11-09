@@ -27,9 +27,9 @@
                     <div class="manage-filters-mask" (click)="filtershow = true" *ngIf="fullscreentable" [ngClass]="{ 'show': !filtershow && fullscreentable }"></div>
                     <div class="bg-[#f8f9fa] border border-[#e6e6e6] shadow-md rounded-lg mb-5 pt-3 px-5 pb-5 manage-filters-manage" [ngClass]="{ 'h-[70px] overflow-hidden': filtershow && !fullscreentable, 'show': !filtershow && fullscreentable }">
                         <div class="flex justify-between items-center">
-                            <h5 class="m-0 font-bold text-xl p-2">GESTIONAR SERVICIOS</h5>
+                            <h5 class="m-0 font-bold text-xl p-2">GESTIONAR MANTENIMIENTOS</h5>
                             <div class="flex justify-end gap-3">
-                                <button pRipple pButton *ngIf="!fullscreentable" class="flex items-center gap-2" routerLink="nuevo"><i class="pi pi-plus"></i> NUEVO SERVICIO</button>
+                                <button pRipple pButton *ngIf="!fullscreentable" class="flex items-center gap-2" routerLink="nuevo"><i class="pi pi-plus"></i> NUEVO MANTENIMIENTO</button>
                                 <button pButton pRipple icon="pi pi-chevron-down" (click)="filtershow = false" *ngIf="filtershow && !fullscreentable"></button>
                                 <button pButton pRipple icon="pi pi-chevron-up" (click)="filtershow = true" *ngIf="!filtershow && !fullscreentable"></button>
                                 <button pRipple pButton (click)="fullscreentable = true" *ngIf="!fullscreentable"><i class="pi pi-window-maximize"></i></button>

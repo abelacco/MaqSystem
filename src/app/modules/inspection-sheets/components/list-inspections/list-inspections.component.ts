@@ -14,27 +14,32 @@ export class ListInspectionsComponent {
         {
             number: "#-123123123",
             date: "11/08/2023",
-            unit: "EXCAVADORA HIDRAULICA DE ORUGAS"
+            unit: "EXCAVADORA HIDRAULICA DE ORUGAS",
+            mechanic: "JUAN PEREZ",
         },
         {
             number: "#-123123123",
             date: "11/08/2023",
-            unit: "RETROEXCAVADORA"
+            unit: "RETROEXCAVADORA",
+            mechanic: "ROBERTO PEREZ",
         },
         {
             number: "#-123123123",
             date: "11/08/2023",
-            unit: "RETROEXCAVADORA"
+            unit: "RETROEXCAVADORA",
+            mechanic: "ROBERTO PEREZ",
         },
         {
             number: "#-123123123",
             date: "11/08/2023",
-            unit: "CARGADOR FRONTAL SOBRE RUEDAS"
+            unit: "CARGADOR FRONTAL SOBRE RUEDAS",
+            mechanic: "EDINSON FLORES",
         },
         {
             number: "#-123123123",
             date: "11/08/2023",
-            unit: "RODILLO VIBRATORIO COMPACTADOR"
+            unit: "RODILLO VIBRATORIO COMPACTADOR",
+            mechanic: "ROBERTO JUARES",
         },
     ]
 
